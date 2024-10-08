@@ -57,6 +57,24 @@ const JobsFilterGroup = props => {
       )
     })
   }
+  const renderLocation = () => (
+    <div>
+      <ul>
+        <li className="checkbox-list-items">
+          <input id="delhi" type="checkbox" className="check-radio" />
+          <label htmlFor="delhi" className="check-label">
+            Delhi
+          </label>
+        </li>
+        <li className="checkbox-list-items">
+          <input id="Hyderabad" type="checkbox" className="check-radio" />
+          <label htmlFor="Hyderabad" className="check-label">
+            Hyderabad
+          </label>
+        </li>
+      </ul>
+    </div>
+  )
   const renderSalaryRange = () => (
     <div className="salary-container">
       <h1 className="salary-heading">Salary Range</h1>
@@ -70,6 +88,7 @@ const JobsFilterGroup = props => {
       {renderEmploymentType()}
       <hr className="horizontal-line" />
       {renderSalaryRange()}
+      {renderLocation()}
     </div>
   )
 }

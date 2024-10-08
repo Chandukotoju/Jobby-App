@@ -181,6 +181,9 @@ class JobProfileSection extends Component {
         <p className="no-jobs-desc">
           We could not find any jobs. Try other filters.
         </p>
+        <button type="button" onClick={this.getJobDetails}>
+          Retry
+        </button>
       </div>
     )
   }
